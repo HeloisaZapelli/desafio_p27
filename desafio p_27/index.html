@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src="js/validacao.js"></script>
+    <script src="js/jquery-3.7.0.js"></script>
+    <script src="js/jquery.mask.js"></script>
+    <script src="js/viacep.js"></script>
+    <script src="js/mask.js"></script>
+
+    <title>Cadastro</title>
+</head>
+<body>
+    <div id="box">
+
+        <h3>Dados do usuário</h3>
+
+        <form id="formCadastro" action="seu_script.php" method="POST">
+        <label>Nome</label>
+        <input type="text" id="i_nome" name="nome" required>
+
+        <label>Sobrenome</label>
+        <input type="text" id="i_sobrenome" name="sobrenome" required>
+
+        <label>Telefone</label>
+        <input type="text" id="i_telefone" name="telefone" required>
+
+        <label>Email</label>
+        <input type="email" id="i_email" name="email" required>
+        
+        <label>CEP</label>
+        <input type="text" id="i_cep" onblur="pesquisa_cep(this.value)">
+
+        <label>Rua</label>
+        <input type="text" id="i_rua">
+
+        <label>Número</label>
+        <input type="text" id="i_num" name="numero" required>
+
+        <label>Bairro</label>
+        <input type="text" id="i_bairro">
+
+        <label>Cidade</label>
+        <input type="text" id="i_cidade">
+
+        <label>Estado</label>
+        <input type="text" id="i_estado">
+
+        <input type="submit" value="Cadastrar" id="btt">
+
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
+*{
+    font-family: 'Lilita One', cursive;
+
+}
+
+body{
+    background-color: #6100696e;
+
+}
+
+h3{
+    text-align: center;
+}
+
+#box{
+    margin: auto;
+    background-color: #ffffffff;
+    width: max-content;
+    padding: 10px 30px 20px 30px;
+
+}
+
+#box input:not(#btt){
+    display: block;
+    margin-bottom: 10px;
+    width: 240px;
+    height: 25px;
+
+}
+
+#btt{
+    cursor: pointer;
+    margin-top: 10px;
+    width: 249px;
+    height: 30px;
+    border: none;
+    background-color: #48015a;
+    color: white;
+    transition: 0.5s;
+
+}
+
+#btt:hover{
+    background-color: #a34fca;
+    transition: 0.5s;
+
+}
